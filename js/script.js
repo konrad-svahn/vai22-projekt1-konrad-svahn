@@ -103,6 +103,8 @@ function changeVisible () {
     const table = document.getElementById("rgb");
     const selected = table.options[table.selectedIndex].value;
     
+
+    // lyckades inte lista ut hur man gör det här med d3 lägg gärna tips för hur man gör det i feedbacken
     if (selected == "red") {
         for (let i = 0; i < red.length; i++) {
             red[i].style.visibility = "visible";
