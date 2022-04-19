@@ -51,11 +51,14 @@ function makeGraph (imgData) {
     const width = 600, height = 400, barMargin = -1;
     const barWidth = (width - barMargin) / length;
 
+    d3.select('#canvas1').selectAll('*').remove()
     const chart = d3.select("#canvas1")
     .append('svg')
         .attr('height', height)
         .attr('width', width)
         .style('background', 'black');
+
+   
     
     chart.selectAll('rect1')
         .data(redData).enter()
